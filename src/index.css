@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-warm-white: #FCFAF7;
+  --color-cream: #F5EFEB;
+  --color-beige: #EAE0D5;
+  --color-burgundy: #6E1A29;
+  --color-burgundy-light: #861F33;
+  --color-burgundy-dark: #4A101C;
+  --color-gold: #C99738;
+  --color-gold-light: #E5C158;
+  --color-gold-dim: #D4AF37;
+  --color-text-dark: #2C1E18;
+  --color-text-muted: #6B5B52;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-warm-white);
+  color: var(--color-text-dark);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(rgba(201, 151, 56, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(110, 26, 41, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px;
+  background-position: 0 0, 16px 16px;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+.font-display {
+  font-family: 'Cinzel', 'Playfair Display', serif;
+  letter-spacing: 0.04em;
+}
+
+.font-mono-archive {
+  font-family: 'Courier Prime', monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFD3C3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C99738;
+}
+
+/* Subtle parchment grain effect */
+.parchment-card {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF6F0 100%);
+  border: 1px solid rgba(223, 211, 195, 0.7);
+  box-shadow: 0 4px 20px -2px rgba(44, 30, 24, 0.05), 0 1px 3px 0 rgba(44, 30, 24, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.parchment-card:hover {
+  box-shadow: 0 12px 28px -4px rgba(110, 26, 41, 0.1), 0 4px 10px -2px rgba(44, 30, 24, 0.04);
+  border-color: rgba(201, 151, 56, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Vintage seal badge */
+.seal-badge {
+  background: radial-gradient(circle at 35% 35%, #861F33, #6E1A29 60%, #4A101C);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 4px 12px rgba(110, 26, 41, 0.28);
+}
+
+/* Indian archival folder tab */
+.folder-tab {
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 18px;
+}
+
+/* Gold foil text shimmer */
+.gold-shimmer {
+  background: linear-gradient(120deg, #9E7422 0%, #DFB15B 45%, #F7E8BA 60%, #B07F28 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
